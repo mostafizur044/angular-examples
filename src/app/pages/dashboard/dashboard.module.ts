@@ -1,17 +1,17 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { AuthComponent } from './auth.component';
+import { DashboardComponent } from './dashboard.component';
 import { Routes, RouterModule } from '@angular/router';
 
 const route: Routes = [
-  {path: '', component: AuthComponent}
+  {path: '', component: DashboardComponent}
 ];
 
 @NgModule({
-  declarations: [AuthComponent],
+  declarations: [DashboardComponent],
   imports: [
     CommonModule,
     RouterModule.forChild(route)
   ]
 })
-export class AuthModule { }
+export class DashboardModule { }
